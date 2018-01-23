@@ -1,6 +1,7 @@
 const wiki = {
 	search: document.getElementById('search'),
 	container: document.getElementById('container'),
+	results: document.getElementById('results'),
 	focus: function() {
 		wiki.search.style.width = '60vw';
 	},
@@ -20,13 +21,21 @@ const wiki = {
 		xhr.send();
 	},
 	showResults: function(arr) {
+		while (wiki.results.lastChild) {
+		    wiki.results.removeChild(wiki.results.lastChild);
+		}
 		const newArr = [];
 		for(let i = 0; i < arr[1].length; i++) {
-			console.log(arr[1][i],arr[2][i],arr[3][i]);
-			newArr.push(`<p><span>${arr[1][i]}</span><a target='_blank' href="${arr[3][i]}">${arr[2][i]}</a>`);
+			arr[2][i] = arr[2][i] || "No preview content available for this article.";
+			newArr.push(`<h4>${arr[1][i]}</h4>
+						<div>${arr[2][i]}</div>`);
 			const p = document.createElement('p');
-			p.innerHTML = newArr[i];
-			document.getElementById('results').appendChild(p);
+			const a = document.createElement('a');
+			a.setAttribute("target", "_blank");
+			a.setAttribute("href", `${arr[3][i]}`);
+			a.innerHTML = newArr[i];
+			p.appendChild(a);
+			wiki.results.appendChild(p);
 		}
 	}
 };
