@@ -12,13 +12,11 @@ body {
 }
 
 #container {
-	position: absolute;
+	position: relative;
 	margin: 0 auto;
+	margin-top: 100px;
 	text-align: center;
-	top: 50%;
-	margin-top: -5vh;
-	left: 50%;
-	margin-left: -15vw;
+	padding: 10px;
 }
 
 #search {
@@ -34,4 +32,19 @@ body {
 	background-color: transparent;
 	color: white;
 	outline: none;
+	margin: 10px;
+}
+
+p {
+	width: 40vw;
+	color: #DDD;
+	margin: 10px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin: 10px auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
