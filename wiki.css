@@ -14,7 +14,7 @@ body {
 #container {
 	position: relative;
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 50px;
 	text-align: center;
 	padding: 10px;
 }
@@ -35,8 +35,12 @@ body {
 	margin: 10px;
 }
 
-p {
+#container p {
 	width: 40vw;
+}
+
+p {
+	width: 70vw;
 	color: #DDD;
 	margin: 10px;
 	font-family: 'Montserrat', sans-serif;
@@ -47,4 +51,19 @@ p {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+#results p {
+	color: #222;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 2px solid #BBB;
+	background-color: #CCC;
+	padding: 15px 10px;
+	margin: 10px auto;
+	position: relative;
+}
+
+h4 {
+	margin: 10px;
 }
