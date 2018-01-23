@@ -2,13 +2,16 @@
 <html>
 <head>
 	<title>Wikipedia Search</title>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=0'>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="wiki.css">
 </head>
 <body>
 	<div id="container">
-		<input id="search" type="text" placeholder="Search">
-	</div>
+		<p>Search for Wikipedia articles in the field below or <a href='https://en.wikipedia.org/wiki/Special:Random' target="_blank">click here</a> to view a random article.</p>
+		<input id="search" type="text" placeholder="Search" autocomplete="off">
+	<div id='results'></div>
 	<script src="wiki.js"></script>
 </body>
 </html>
