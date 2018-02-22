@@ -3,6 +3,14 @@ body, html {
 	padding: 0;
 }
 
+#nav-placeholder {
+  width: 30em;
+  margin: 0 auto;
+}
+#nav-placeholder object {
+  width: 30em;
+}
+
 body {
 	background-color: #345;
 }

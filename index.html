@@ -8,11 +8,15 @@
 	<link type="text/css" rel="stylesheet" href="wiki.css">
 </head>
 <body>
+	<div id="nav-placeholder"></div>
 	<div id="container">
 		<p>Search for Wikipedia articles in the field below or <a href='https://en.wikipedia.org/wiki/Special:Random' target="_blank">click here</a> to view a random article.</p>
 		<input id="search" type="text" placeholder="Search" autocomplete="off">
 	</div>
 	<div id='results'></div>
 	<script src="wiki.js"></script>
+	<script type="text/javascript">
+		document.getElementById('nav-placeholder').innerHTML = '<object type="text/html" data="../nav.html" ></object>';
+	</script>
 </body>
 </html>
