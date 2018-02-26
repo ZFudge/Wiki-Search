@@ -2,13 +2,13 @@ body, html {
 	margin: 0;
 	padding: 0;
 }
-
 #nav-placeholder {
-  width: 30em;
-  margin: 0 auto;
+  	width: 100%;
+  	max-width: 800px;
+  	margin: 0 auto;
 }
 #nav-placeholder object {
-  width: 30em;
+  	width: 100%;
 }
 
 body {
